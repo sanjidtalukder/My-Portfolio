@@ -26,7 +26,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-10 px-4 rounded-2xl shadow-2xl md:px-10 lg:px-20 bg-gray-50 dark:bg-gray-900">
+    <section className="py-16 px-4 rounded-2xl shadow-2xl md:px-10 lg:px-20 bg-gray-50 dark:bg-gray-900">
       <Toaster position="top-right" />
       <h2 className="text-3xl font-bold text-center mb-8 text-gray-800 dark:text-white">
         Contact Me

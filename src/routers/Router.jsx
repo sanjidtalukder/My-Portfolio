@@ -1,33 +1,25 @@
-import {createBrowserRouter} from "react-router";
+import { createBrowserRouter } from "react-router-dom";
+
 import Home from "../pages/Home/Home";
-import Navbar from "../component/Navbar/Navbar";
-import About from "../component/AboutMe/AboutMe";
+import AboutMe from "../component/AboutMe/AboutMe";
 import Skills from "../component/Skills/Skills";
 import Hero from "../component/Hero/Hero";
-import AboutMe from "../component/AboutMe/AboutMe";
+import MainLayout from "../Layout/MainLayout";
+import Contact from "../component/Contact/Contact";
+import ProjectsSection from "../component/Contact/ProjectsSection/ProjectsSection";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home></Home>,
-    children:[
- {
-    path:"/navbar",
-    element:<Navbar></Navbar>
-  },
-  {
-    path:"/skills",
-    element:<Skills></Skills>
-  },
-  {
-    path:"/hero",
-    element:<Hero></Hero>
-  },
-  {
-    path:"/about",
-    element:<AboutMe></AboutMe>
-  }
-    ]},
-])
+    element: <MainLayout />, 
+    children: [
+      { path: "/", element: <Home /> },
+      { path: "/about", element: <AboutMe /> },
+      { path: "/skills", element: <Skills /> },
+      { path: "/hero", element: <Hero /> },
+      { path: "/contact", element: <Contact /> },
+      { path: "/projects", element: <ProjectsSection /> },
 
-  
+    ],
+  },
+]);

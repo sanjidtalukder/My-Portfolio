@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom"; //  React Router Link import
 
 const Navbar = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -14,11 +15,11 @@ const Navbar = () => {
 
   const navLinks = (
     <>
-      <li><a href="/home" className="hover:text-primary">Home</a></li>
-      <li><a href="/about" className="hover:text-primary">About</a></li>
-      <li><a href="/projects" className="hover:text-primary">Projects</a></li>
-      <li><a href="/skills" className="hover:text-primary">Skills</a></li>
-      <li><a href="/contact" className="hover:text-primary">Contact</a></li>
+      <li><Link to="/" className="hover:text-primary">Home</Link></li>
+      <li><Link to="/about" className="hover:text-primary">About</Link></li>
+      <li><Link to="/projects" className="hover:text-primary">Projects</Link></li>
+      <li><Link to="/skills" className="hover:text-primary">Skills</Link></li>
+      <li><Link to="/contact" className="hover:text-primary">Contact</Link></li>
     </>
   );
 
@@ -42,14 +43,14 @@ const Navbar = () => {
         </div>
 
         {/* Logo & Brand */}
-        <a href="#home" className="flex items-center gap-2 font-bold text-xl">
+        <Link to="/home" className="flex items-center gap-2 font-bold text-xl">
           <img
             src="https://i.ibb.co/Lzn5vc1W/logo.png"
             alt="Logo"
             className="h-8 w-8 rounded-full object-cover"
           />
           <span className="text-primary">Sanjid.Dev</span>
-        </a>
+        </Link>
       </div>
 
       <div className="navbar-center hidden lg:flex">

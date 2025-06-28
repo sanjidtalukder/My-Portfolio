@@ -17,7 +17,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className="py-10 bg-base-100 dark:bg-gray-900 rounded-2xl shadow-2xl">
+    <div className="py-16 bg-base-100 dark:bg-gray-900 rounded-2xl shadow-2xl">
       <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 dark:text-white mb-6">My Skills</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
         {skills.map((skill, index) => (
