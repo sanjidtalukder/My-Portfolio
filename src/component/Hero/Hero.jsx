@@ -3,7 +3,7 @@ import React from 'react';
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center pt-20 bg-base-50 dark:bg-gray-900 px-4 md:px-10 py-16 rounded-2xl shadow-2xl">
-      <div className="max-w-7xl w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
+      <div className="max-w-7xl w-full flex flex-col-reverse lg:flex-row items-center justify-around gap-10">
         
         {/* Left: Text Content */}
         <div className="text-center lg:text-left space-y-6">
@@ -17,14 +17,14 @@ const Hero = () => {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row sm:justify-start gap-4">
             <a
-              href="/Sanjid_Talukder_CV.pdf"
+              href="https://cutt.ly/qrRXwK26"
               className="btn btn-primary px-6"
               download
             >
               Download CV
             </a>
             <a
-              href="#contact"
+              href="/contact"
               className="btn btn-outline btn-secondary px-6"
             >
               Contact Me
@@ -33,12 +33,13 @@ const Hero = () => {
         </div>
 
         {/* Right: Image */}
-        <div>
+        <div className='items-center'>
           <img
-            src="https://i.ibb.co/NgT6QfKg/image-1-1.png"
-            alt="Portrait of Sanjid Talukder"
-            className="w-72 md:w-96 rounded-2xl shadow-xl border-4 border-primary hover:shadow-cyan-50"
-          />
+  src="https://i.ibb.co/NgT6QfKg/image-1-1.png"
+  alt="Portrait of Sanjid Talukder"
+  className="w-48 h-48 md:w-64 md:h-64 rounded-full shadow-xl border-4 border-primary hover:shadow-cyan-50 object-cover"
+/>
+
         </div>
       </div>
     </section>

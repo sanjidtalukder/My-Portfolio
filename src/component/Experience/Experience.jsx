@@ -34,14 +34,14 @@ const Experience = () => {
         </div>
 
         {/* Teaching Experience */}
-        <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow-md">
+        {/* <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow-md">
           <h3 className="text-xl font-semibold text-gray-800 dark:text-white">Private Tutor</h3>
           <p className="text-gray-700 dark:text-gray-300">
             Taught students from Class 1 to 10 in various subjects, helping them improve academically.
             This experience strengthened my communication skills, patience, and ability to explain complex topics clearly.
-          </p>
+          </p> */}
           {/* <p className="text-sm text-gray-500 dark:text-gray-400">2018 - Present</p> */}
-        </div>
+        {/* </div> */}
 
        
 

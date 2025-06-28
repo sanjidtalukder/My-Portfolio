@@ -1,34 +1,40 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react"; // Using lucide icons (optional)
-import HobbyHub from "./HobbyHub";
 
 const imageUrls = [
-  "https://i.ibb.co/LzR2MDVQ/Screenshot-2025-06-28-095436.png",
-  "https://i.ibb.co/5hVPBWfw/Screenshot-2025-06-28-095137.png",
-  "https://i.ibb.co/VWSg5HLJ/Screenshot-2025-06-28-095153.png",
-  "https://i.ibb.co/NnpNp7Xs/Screenshot-2025-06-28-095206.png",
-  "https://i.ibb.co/WWMkR9cR/Screenshot-2025-06-28-095316.png",
-  "https://i.ibb.co/wZ8YYdBW/Screenshot-2025-06-28-100202.png",
-  "https://i.ibb.co/PZxvFw1y/Screenshot-2025-06-28-095405.png",
-  "https://i.ibb.co/RkptFDk8/Screenshot-2025-06-28-095419.png",
-  "https://i.ibb.co/KzWjjdVD/Screenshot-2025-06-28-095335.png",
-  "https://i.ibb.co/kVyXzrNK/Screenshot-2025-06-28-095329.png",
+  "https://i.ibb.co/5Jmk7T5/Screenshot-2025-06-28-225822.png",
+"https://i.ibb.co/FbZr3HkJ/Screenshot-2025-06-28-225842.png",
+"https://i.ibb.co/hxpvRM1q/Screenshot-2025-06-28-225901.png",
+"https://i.ibb.co/9z1mzLJ/Screenshot-2025-06-28-225926.png",
+"https://i.ibb.co/nN52rKxF/Screenshot-2025-06-28-225935.png",
+"https://i.ibb.co/4R6CxVc9/Screenshot-2025-06-28-225950.png",
+"https://i.ibb.co/d4M4rVdJ/Screenshot-2025-06-28-230009.png",
+"https://i.ibb.co/76WZ3N3/Screenshot-2025-06-28-230017.png",
+"https://i.ibb.co/KpRh8NTm/Screenshot-2025-06-28-232255.png",
+"https://i.ibb.co/4nfnMF24/Screenshot-2025-06-28-232304.png",
+"https://i.ibb.co/VYXd3TDj/Screenshot-2025-06-28-230026.png",
+"https://i.ibb.co/dw36CpDL/Screenshot-2025-06-28-230053.png",
+"https://i.ibb.co/QvbX0yh7/Screenshot-2025-06-28-230115.png",
+"https://i.ibb.co/F280QT7/Screenshot-2025-06-28-230122.png",
+"https://i.ibb.co/JWMnHWhR/Screenshot-2025-06-28-230133.png",
+"https://i.ibb.co/S40kWZG9/Screenshot-2025-06-28-230208.png"
 ];
 
 const project = {
-  name: "My Event Explorer",
-  techStack: "React, Tailwind CSS, Firebase",
+  name: "HobbyHub - Local Hobby Group Organizer",
+  techStack: "React.js, Node.js, Express.js, MongoDB, Firebase Auth, Tailwind CSS, DaisyUI",
   description:
-    "A web-based event management platform where users can explore, book, and manage various events seamlessly with real-time updates and secure authentication.",
-  liveLink: "https://gilded-cocada-e311bd.netlify.app/",
-  githubLink: "https://github.com/sanjidtalukder/my-Event-Explorer",
+    "HobbyHub is a full-stack web application where users can explore, join, or create local hobby groups based on categories. The platform includes user authentication, real-time group filtering, admin dashboard for group approval, and booking management features.",
+  liveLink: "https://hobbyhub-2cd93.web.app/",
+  githubLink_Client: "https://github.com/sanjidtalukder/Hubby-Hub-Client",
+  githubLink_Server: "https://github.com/sanjidtalukder/HobbyHub-server",
   challenges:
-    "Implementing real-time synchronization and optimizing performance for mobile devices.",
+    "Integrating role-based dashboard with real-time group approval flow, handling request state with dynamic user updates, and ensuring data persistence with Firebase Auth and MongoDB connection.",
   improvements: "Add offline support and integrate calendar reminders.",
 };
 
-const ProjectsSection = () => {
+const HobbyHub = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [direction, setDirection] = useState(1);
   const [isPaused, setIsPaused] = useState(false);
@@ -54,14 +60,13 @@ const ProjectsSection = () => {
   };
 
   return (
-    <>
     <section className="py-16 rounded-2xl shadow-2xl px-4 md:px-8 lg:px-16 bg-white dark:bg-gray-900 text-gray-800 dark:text-white">
-      <h2 className="text-3xl font-bold mb-10 text-center">My Project</h2>
+     
 
       <div className="flex flex-col lg:flex-row gap-10 max-w-7xl mx-auto">
         {/* Left: Animated Carousel */}
         <div
-          className="lg:w-1/2 relative  h-[350px] rounded-xl overflow-hidden shadow-lg flex items-center justify-center bg-black group"
+          className="lg:w-1/2 relative  h-[450px] rounded-xl overflow-hidden shadow-lg flex items-center justify-center bg-black group"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
@@ -134,13 +139,22 @@ const ProjectsSection = () => {
           </a>
 
           <a
-            href={project.githubLink}
+            href={project.githubLink_Client}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-outline mb-6"
           >
-            GitHub Repository
+            GitHub Repository Client
           </a>
+           <a
+  href={project.githubLink_Server}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn btn-outline mb-6"
+>
+  GitHub Repository Server
+</a>
+
 
           <div>
             <h4 className="font-semibold mb-1">Challenges Faced:</h4>
@@ -150,20 +164,17 @@ const ProjectsSection = () => {
               Potential Improvements & Future Plans:
             </h4>
             <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1 mt-2">
-              <li>JWT-based secure login and protected routes</li>
-              <li>Event filtering by category and date</li>
-              <li>Booking system with success feedback & cancellation option</li>
-              <li>Dynamic charts showing user booking statistics</li>
-              <li>Real-time seat availability display</li>
+              <li>JWT-based secure login and protected route authorization</li>
+      <li>Advanced group filtering by category, date, and popularity</li>
+      <li>Fully dynamic booking management with cancel/edit options</li>
+      <li>Admin analytics panel with booking statistics and charts</li>
+      <li>Real-time seat availability and group status update</li>
             </ul>
           </div>
         </div>
       </div>
-    </section><br></br>
-    <HobbyHub></HobbyHub>
-    </>
-    
+    </section>
   );
 };
 
-export default ProjectsSection;
+export default HobbyHub;
