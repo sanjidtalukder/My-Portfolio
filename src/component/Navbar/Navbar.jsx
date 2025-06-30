@@ -43,13 +43,13 @@ const Navbar = () => {
         </div>
 
         {/* Logo & Brand */}
-        <Link to="/home" className="flex items-center gap-2 font-bold text-xl">
+        <Link to="/" className="flex items-center gap-2 font-bold text-xl">
           <img
-            src="https://i.ibb.co/Lzn5vc1W/logo.png"
+            src="https://i.ibb.co/cSPP0Wd5/cropped-circle-image.png"
             alt="Logo"
             className="h-8 w-8 rounded-full object-cover"
           />
-          <span className="text-primary">Sanjid.Dev</span>
+          <span  className="text-primary">Sanjid.Dev</span>
         </Link>
       </div>
 
