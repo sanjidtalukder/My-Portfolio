@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom"; //  React Router Link import
+  import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -15,11 +16,49 @@ const Navbar = () => {
 
   const navLinks = (
     <>
-      <li><Link to="/" className="hover:text-primary">Home</Link></li>
-      <li><Link to="/about" className="hover:text-primary">About</Link></li>
-      <li><Link to="/projects" className="hover:text-primary">Projects</Link></li>
-      <li><Link to="/skills" className="hover:text-primary">Skills</Link></li>
-      <li><Link to="/contact" className="hover:text-primary">Contact</Link></li>
+   
+
+<li>
+  <NavLink
+    to="/"
+    className={({ isActive }) => isActive ? "text-primary font-semibold" : "hover:text-primary"}
+  >
+    Home
+  </NavLink>
+</li>
+<li>
+  <NavLink
+    to="/about"
+    className={({ isActive }) => isActive ? "text-primary font-semibold" : "hover:text-primary"}
+  >
+    About
+  </NavLink>
+</li>
+<li>
+  <NavLink
+    to="/projects"
+    className={({ isActive }) => isActive ? "text-primary font-semibold" : "hover:text-primary"}
+  >
+    Projects
+  </NavLink>
+</li>
+<li>
+  <NavLink
+    to="/skills"
+    className={({ isActive }) => isActive ? "text-primary font-semibold" : "hover:text-primary"}
+  >
+    Skills
+  </NavLink>
+</li>
+<li>
+  <NavLink
+    to="/contact"
+    className={({ isActive }) => isActive ? "text-primary font-semibold" : "hover:text-primary"}
+  >
+    Contact
+  </NavLink>
+</li>
+
     </>
   );
 

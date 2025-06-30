@@ -13,14 +13,15 @@ const Home = () => {
         <>
        <div className="min-h-screen bg-base-100 ">
             <Navbar />
-                <main className="px-4 md:px-8 lg:px-16 pt-6">
-                    <Hero /><br></br>
-                    <AboutMe></AboutMe><br></br>
-                    <Skills></Skills><br></br>
-                    <Education></Education><br></br>
-                    <Experience></Experience><br></br>
-                    <ProjectsSection></ProjectsSection><br></br>
-                    <Contact></Contact><br></br>
+                <main className="px-4 md:px-8 lg:px-16 pt-6 space-y-12">
+                    <Hero />
+                    <AboutMe></AboutMe>
+                    <Skills></Skills>
+                    <Education></Education>
+                    <Experience></Experience>
+                    <ProjectsSection></ProjectsSection>
+                    <Contact></Contact>
+                    
     
                 </main>
         </div>
