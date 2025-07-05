@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import HobbyHub from "./HobbyHub";
 import EnglishJanala from "./EnglishJanala";
+import EduSphere from "./EduSphare";
 
 const imageUrls = [
   "https://i.ibb.co/LzR2MDVQ/Screenshot-2025-06-28-095436.png",
@@ -56,6 +57,7 @@ const ProjectsSection = () => {
 
   return (
     <>
+      <EduSphere></EduSphere>
       <HobbyHub />
       <br />
       <section className="py-12 px-4 rounded-2xl shadow-2xl md:px-8 bg-white dark:bg-gray-900 text-gray-800 dark:text-white">
