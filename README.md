@@ -85,13 +85,6 @@ Role: Workflow planning, task coordination, and timely delivery management.
 
 ---
 
-
-
----
-
-
----
-
 ## 📜 License
 
 This project is open source and available under the [Programming Hero](LICENSE).
