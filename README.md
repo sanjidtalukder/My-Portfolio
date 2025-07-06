@@ -60,7 +60,7 @@ Role: Workflow planning, task coordination, and timely delivery management.
 - Category Filtering  
 - Protected Routes  
 
-🔗 **Live Site:** [Live Hobby Group](https://your-live-hobbyhub-link.com)  
+🔗 **Live Site:** [Live Hobby Group](https://hobbyhub-2cd93.web.app/)  
 🔗 **Client Repo:** [GitHub Client Repo](https://github.com/sanjidtalukder/Hubby-Hub-Client)  
 🔗 **Server Repo:** [GitHub Server Repo](https://github.com/sanjidtalukder/HobbyHub-server)
 
