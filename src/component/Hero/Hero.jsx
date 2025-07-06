@@ -21,11 +21,11 @@ const Hero = () => {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row sm:justify-start gap-4">
             <a
-              href="https://cutt.ly/qrRXwK26"
+              href="https://drive.google.com/file/d/1IMif9wSFAzBMQBHe20R3dA-Kv0BKIL5t/view?usp=sharing"
               className="btn btn-primary px-6"
               download
             >
-              Download CV
+              Download Resume
             </a>
             <a
               href="/contact"

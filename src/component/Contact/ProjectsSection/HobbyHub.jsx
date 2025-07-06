@@ -118,6 +118,7 @@ const HobbyHub = () => {
 
         {/* Right: Info */}
         <div className="lg:w-1/2 max-h-[450px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 dark:scrollbar-thumb-gray-600 bg-gray-100 dark:bg-gray-800 p-8 rounded-xl shadow-md">
+        
           <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
           <p className="text-sm mb-2">
             <span className="font-semibold">Tech Stack:</span> {project.techStack}

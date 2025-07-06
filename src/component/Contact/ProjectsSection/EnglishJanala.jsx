@@ -51,6 +51,7 @@ const EnglishJanala = () => {
 
   return (
     <section className="py-12 px-4 rounded-2xl shadow-2xl md:px-8 bg-white dark:bg-gray-900 text-gray-800 dark:text-white">
+       <h2 className="text-3xl font-bold mb-10 text-center">Featured Project</h2>
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 items-stretch">
         {/* Left: Image Carousel */}
         <div
