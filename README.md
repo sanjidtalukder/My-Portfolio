@@ -48,8 +48,8 @@ Role: Workflow planning, task coordination, and timely delivery management.
 - Smooth Animations  
 
 🔗 **Live Site:** [my-edusphere-client.web.app](https://my-edusphere-client.web.app)  
-🔗 **Client Repo:** [GitHub Client Repo](https://github.com/your-client-repo-link)  
-🔗 **Server Repo:** [GitHub Server Repo](https://github.com/your-server-repo-link)
+🔗 **Client Repo:** [GitHub Client Repo](https://github.com/sanjidtalukder/EduSphere-Client)  
+🔗 **Server Repo:** [GitHub Server Repo](https://github.com/sanjidtalukder/EduSphere-Server)
 
 ---
 
@@ -61,8 +61,8 @@ Role: Workflow planning, task coordination, and timely delivery management.
 - Protected Routes  
 
 🔗 **Live Site:** [Live Hobby Group](https://your-live-hobbyhub-link.com)  
-🔗 **Client Repo:** [GitHub Client Repo](https://github.com/your-client-repo-link)  
-🔗 **Server Repo:** [GitHub Server Repo](https://github.com/your-server-repo-link)
+🔗 **Client Repo:** [GitHub Client Repo](https://github.com/sanjidtalukder/Hubby-Hub-Client)  
+🔗 **Server Repo:** [GitHub Server Repo](https://github.com/sanjidtalukder/HobbyHub-server)
 
 ---
 
