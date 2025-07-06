@@ -9,7 +9,7 @@ Welcome to my personal **portfolio website**! I am **Sanjid Talukder**, a passio
 
 - 📧 Email: mdsanjidt@gmail.com  
 - 📞 Phone: +8801889876289  
-- 🌐 LinkedIn: [linkedin.com/in/MDSanjidTalukder](https://linkedin.com/in/MDSanjidTalukder)
+- 🌐 LinkedIn: [linkedin.com/in/MDSanjidTalukder](https://www.linkedin.com/in/md-sanjid-talukder-08b681320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 
 ---
 
